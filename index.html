@@ -8,7 +8,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3Cmask id='m'%3E%3Crect width='64' height='64' fill='white'/%3E%3Ccircle cx='32' cy='32' r='22' fill='black'/%3E%3C/mask%3E%3C/defs%3E%3Crect width='64' height='64' fill='%230B0712'/%3E%3Cg mask='url(%23m)' fill='%23F5F0EA'%3E%3Crect x='4' y='6' width='22' height='52'/%3E%3Crect x='38' y='6' width='22' height='52'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
     --void:#0B0912;
@@ -133,9 +133,9 @@
     padding-bottom:4vh;
   }
   .hero-name{
-    font-family:"Optima","URW Classico","Candara","Amaranth",serif;
-    font-weight:700;
-    font-size:clamp(82px,17vw,200px);
+    font-family:"Cinzel",serif;
+    font-weight:800;
+    font-size:clamp(80px,16.5vw,196px);
     line-height:.95;
     letter-spacing:.02em;
     color:var(--ivory);
@@ -283,7 +283,7 @@
     font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);
     max-width:var(--maxw);margin:0 auto;
   }
-  footer .fmark{display:flex;align-items:baseline;gap:.14em;font-family:"Optima","URW Classico","Candara","Amaranth",serif;font-weight:700;letter-spacing:.24em;font-size:13px;color:var(--ivory);}
+  footer .fmark{display:flex;align-items:baseline;gap:.14em;font-family:"Cinzel",serif;font-weight:700;letter-spacing:.24em;font-size:13px;color:var(--ivory);}
   footer .fmark .o-mark{width:.6em;height:.6em;}
   footer a{text-decoration:none;}
   footer a:hover{color:var(--ivory);}
@@ -424,7 +424,9 @@
     <p class="lede" data-i18n="book.lede">Tell me the date, the venue and the vibe — I'll take it from there. Based in Barcelona, available across Spain and for travel.</p>
     <div class="hero-ctas">
       <a class="btn btn-solid" href="mailto:Patricia.s.eloy@gmail.com?subject=Booking%20inquiry">Patricia.s.eloy@gmail.com</a>
-      <a class="btn" href="https://ig.me/m/Patricia.Eloy" rel="noopener" data-i18n="cta.chat">Chat with me</a>
+      <a class="btn" href="https://wa.me/34684168761" rel="noopener" data-i18n="cta.chat">Chat with me</a>
+      <a class="btn" href="https://www.instagram.com/patricia.eloy/" rel="noopener" data-i18n="cta.see">See me</a>
+      <a class="btn" href="https://soundcloud.com/patricia-eloy-152870577" rel="noopener" data-i18n="cta.listenme">Listen to me</a>
     </div>
     <p class="fineprint" data-i18n="book.fine">Replies within 24h · English / Español / Català / Português</p>
   </div>
@@ -441,7 +443,7 @@ const I18N = {
     "nav.events":"Events","nav.residency":"Residency","nav.listen":"Listen","nav.book":"Book ELOY",
     "hero.role":"DJ & Music Curator · Barcelona",
     "hero.line":"The right sound, <em>at the right moment.</em>",
-    "cta.book":"Book ELOY","cta.listen":"Listen","cta.chat":"Chat with me",
+    "cta.book":"Book ELOY","cta.listen":"Listen","cta.chat":"Chat with me","cta.see":"See me","cta.listenme":"Listen to me",
     "services.label":"What I do",
     "services.lede":"Reading the room is the craft. Every set is curated for your event, your guests, your moment.",
     "s1.h":"Corporate events",
@@ -467,7 +469,7 @@ const I18N = {
     "nav.events":"Eventos","nav.residency":"Residencia","nav.listen":"Escuchar","nav.book":"Reserva a ELOY",
     "hero.role":"DJ y curadora musical · Barcelona",
     "hero.line":"El sonido correcto, <em>en el momento en que lo necesitas.</em>",
-    "cta.book":"Reserva a ELOY","cta.listen":"Escuchar","cta.chat":"Chatea conmigo",
+    "cta.book":"Reserva a ELOY","cta.listen":"Escuchar","cta.chat":"Chatea conmigo","cta.see":"Mírame","cta.listenme":"Escúchame",
     "services.label":"Qué hago",
     "services.lede":"Leer la sala es el oficio. Cada set está curado para tu evento, tus invitados, tu momento.",
     "s1.h":"Eventos corporativos",
@@ -493,7 +495,7 @@ const I18N = {
     "nav.events":"Esdeveniments","nav.residency":"Residència","nav.listen":"Escoltar","nav.book":"Reserva a ELOY",
     "hero.role":"DJ i curadora musical · Barcelona",
     "hero.line":"El so correcte, <em>en el moment precís.</em>",
-    "cta.book":"Reserva a ELOY","cta.listen":"Escoltar","cta.chat":"Xateja amb mi",
+    "cta.book":"Reserva a ELOY","cta.listen":"Escoltar","cta.chat":"Xateja amb mi","cta.see":"Mira'm","cta.listenme":"Escolta'm",
     "services.label":"Què faig",
     "services.lede":"Llegir la sala és l'ofici. Cada set està curat per al teu esdeveniment, els teus convidats, el teu moment.",
     "s1.h":"Esdeveniments corporatius",
@@ -519,7 +521,7 @@ const I18N = {
     "nav.events":"Eventos","nav.residency":"Residência","nav.listen":"Ouvir","nav.book":"Reserva a ELOY",
     "hero.role":"DJ e curadora musical · Barcelona",
     "hero.line":"O som certo, <em>no momento certo.</em>",
-    "cta.book":"Reserva a ELOY","cta.listen":"Ouvir","cta.chat":"Fala comigo",
+    "cta.book":"Reserva a ELOY","cta.listen":"Ouvir","cta.chat":"Fala comigo","cta.see":"Vê-me","cta.listenme":"Ouve-me",
     "services.label":"O que faço",
     "services.lede":"Ler a sala é o ofício. Cada set é curado para o teu evento, os teus convidados, o teu momento.",
     "s1.h":"Eventos corporativos",
