@@ -234,7 +234,23 @@
       radial-gradient(ellipse 64% 86% at 56% 56%, rgba(228,142,54,.52), rgba(228,142,54,0) 62%),
       radial-gradient(ellipse 140% 130% at 50% 45%, #3A3078 0%, #262052 52%, #151028 100%);
   }
-  .field-inner{max-width:var(--maxw);margin:0 auto;padding:0 clamp(18px,4vw,52px);}
+  .field-inner{
+    max-width:var(--maxw);margin:0 auto;padding:0 clamp(18px,4vw,52px);
+    display:grid;grid-template-columns:1.15fr .85fr;
+    gap:clamp(36px,5vw,76px);align-items:center;
+  }
+  .field-media{display:flex;justify-content:center;}
+  .field-video{
+    width:100%;max-width:330px;
+    aspect-ratio:9/16;object-fit:cover;
+    border:1px solid rgba(242,238,230,.3);
+    display:block;
+  }
+  @media(max-width:820px){
+    .field-inner{grid-template-columns:1fr;}
+    .field-media{justify-content:flex-start;}
+    .field-video{max-width:290px;}
+  }
   .field .label{color:rgba(242,238,230,.8);}
   .field p{max-width:560px;color:rgba(242,238,230,.92);}
   .field p + p{margin-top:14px;color:rgba(242,238,230,.72);}
@@ -383,17 +399,24 @@
 <section id="residency" class="field-section">
   <div class="field">
     <div class="field-inner">
-      <span class="caps label" data-i18n="residency.label">Current residency</span>
-      <h2>Sunset cruise, Barcelona</h2>
-      <p data-i18n="residency.p1">Every day I play golden hour over the Mediterranean as resident DJ aboard Barcelona's This is Med sunset cruise — House &amp; Afro House as the sun goes down.</p>
-      <div class="gigs">
-        <span class="caps" data-i18n="gigs.label">Also find me at</span>
-        <a class="gig" href="https://ayladancefloor.com/" rel="noopener">
-          <span class="gig-date">Oct '26</span>
-          <span class="gig-name">Ayla Coffee Rave</span>
-          <span class="gig-genre">Afro Latin House — Tribal Rhythms</span>
-          <span class="gig-arrow" aria-hidden="true">→</span>
-        </a>
+      <div class="field-copy">
+        <span class="caps label" data-i18n="residency.label">Current residency</span>
+        <h2>Sunset cruise, Barcelona</h2>
+        <p data-i18n="residency.p1">Every day I play golden hour over the Mediterranean as resident DJ aboard Barcelona's This is Med sunset cruise — House &amp; Afro House as the sun goes down.</p>
+        <div class="gigs">
+          <span class="caps" data-i18n="gigs.label">Also find me at</span>
+          <a class="gig" href="https://ayladancefloor.com/" rel="noopener">
+            <span class="gig-date">Oct '26</span>
+            <span class="gig-name">Ayla Coffee Rave</span>
+            <span class="gig-genre">Afro Latin House — Tribal Rhythms</span>
+            <span class="gig-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+      <div class="field-media">
+        <video class="field-video" autoplay muted loop playsinline preload="metadata"
+               poster="residency-poster.jpg" src="residency.mp4"
+               aria-label="ELOY playing at golden hour aboard the sunset cruise"></video>
       </div>
     </div>
   </div>
